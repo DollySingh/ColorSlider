@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="XIBNViewController">
+            <connections>
+                <outlet property="btn" destination="PFE-Cg-Tvd" id="qcQ-49-bd0"/>
+                <outlet property="lbl1" destination="6Bm-7n-Scz" id="u7q-TU-9K9"/>
+                <outlet property="pickerview" destination="DBj-Nn-ChK" id="MuP-JC-trr"/>
+                <outlet property="tableview" destination="guv-jB-Imk" id="k3g-kM-muN"/>
+                <outlet property="tf1" destination="jG4-Mz-Eff" id="kai-TF-kc6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFE-Cg-Tvd">
+                    <rect key="frame" x="45" y="93" width="238" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.96458333333333335" green="0.65377579542901254" blue="0.61548850115360998" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="btnclick:" destination="-1" eventType="touchUpInside" id="c6F-aI-elU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Bm-7n-Scz">
+                    <rect key="frame" x="41" y="43" width="238" height="42"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.60870264184637579" green="0.96458333333333335" blue="0.38520836605313358" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.29022888149999998" green="0.87359775640000004" blue="0.5456633246" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.49953926279999999" green="0.032813017520000001" blue="0.062960618970000007" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jG4-Mz-Eff">
+                    <rect key="frame" x="45" y="145" width="231" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="aXC-2a-tNV"/>
+                    </connections>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="guv-jB-Imk">
+                    <rect key="frame" x="41" y="208" width="240" height="128"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DBj-Nn-ChK">
+                    <rect key="frame" x="18" y="381" width="252" height="114"/>
+                    <animations/>
+                </pickerView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.48985434919999998" green="0.96458333330000001" blue="0.95435262129999998" alpha="1" colorSpace="calibratedRGB"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="205" y="276"/>
+        </view>
+    </objects>
+</document>
